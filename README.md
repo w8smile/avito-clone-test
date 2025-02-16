@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+Приложение (фронтенд)  Avito Clone для размещения и управления объявлениями. Оно позволяет пользователям создавать, редактировать и просматривать объявления с удобными фильтрами, пагинацией и авторизацией.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔧 Используемые технологии и инструменты:
+TypeScript, Redux Toolkit, Axios, React Router, React Hook Form, Vite, Docker
+📌 Функционал приложения:
+✅ Размещение объявлений – многошаговая форма для публикации объявлений
+✅ Список объявлений – все размещённые объявления с удобной навигацией
+✅ Просмотр объявления – детальная карточка с информацией
+✅ Редактирование – возможность изменять объявления с предзаполненными данными
+✅ Авторизация (опционально) – управление объявлениями только для зарегистрированных пользователей
+🔍 Дополнительные возможности:
+Максимальное количество объявлений на странице – 5
+Кнопка «Разместить объявление» для быстрого добавления новых объектов
+Превью объявления с фото (или заглушкой), названием, локацией и категорией
+Поиск объявлений по названию
+Фильтрация по категориям (авто, недвижимость, услуги) с доп. фильтрами
+Пагинация
+Сохранение черновиков – данные формы не теряются при перезагрузке
+Приложение оптимизировано для удобной работы пользователей и может быть развернуто в контейнеризированной среде. 🚀
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```

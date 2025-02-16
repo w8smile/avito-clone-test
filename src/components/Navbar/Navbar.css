@@ -1,21 +1,79 @@
-.navbar-container {
+.navbar {
+  background-color: #80bbff;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-container {
+  display: flex;
   width: 100%;
-  max-width: 100%;
-  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-.form-container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+.logo h1 {
+  margin: 0;
+  font-size: 42px;
+  color: #333;
 }
-.navbar {
-  background-color: #7bb8ff;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-link {
+  text-decoration: none;
+}
+
+.navbar-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar-btn:hover {
+  background-color: #0056b3;
+}
+
+.auth-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.auth-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-button.login {
+  background-color: #28a745;
+  color: white;
+}
+
+.auth-button.login:hover {
+  background-color: #218838;
+}
+
+.auth-button.logout {
+  background-color: #dc3545;
+  color: white;
+}
+
+.auth-button.logout:hover {
+  background-color: #c82333;
 }

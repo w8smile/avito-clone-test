@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Navbar } from './components/Navbar/Navbar.tsx'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { Auth } from './components/Auth/Auth.tsx'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/item/:id" element={<Item />} />
           <Route path="/edit/:id" element={<Form isEdit />} />
           <Route path="/form" element={<Form />} />
+          <Route path="/auth" element={<Auth />} />
         </Routes>
 
         <ToastContainer
