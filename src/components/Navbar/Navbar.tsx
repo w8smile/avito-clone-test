@@ -9,7 +9,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     setIsAuthenticated(!!localStorage.getItem('user'))
-  }, [location]) // Обновляем состояние при смене маршрута
+  }, [location])
 
   const handleLogin = () => {
     navigate('/auth')
@@ -20,7 +20,6 @@ export const Navbar = () => {
     setIsAuthenticated(false)
   }
 
-  // Список страниц, на которых скрываем кнопку входа/выхода
   const hideAuthButton =
     location.pathname === '/auth' ||
     location.pathname === '/form' ||
@@ -47,7 +46,6 @@ export const Navbar = () => {
           </ul>
         </nav>
 
-        {/* Кнопка входа/выхода (скрываем на указанных страницах) */}
         {!hideAuthButton && (
           <div className="auth-section">
             {isAuthenticated ? (
