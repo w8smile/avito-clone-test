@@ -1,11 +1,13 @@
+
 .navbar {
-  background-color: #80bbff;
+  background: linear-gradient(135deg, #80bbff, #007bff);
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ddd;
 }
+
 
 .navbar-container {
   display: flex;
@@ -14,11 +16,18 @@
   align-items: center;
 }
 
+
 .logo h1 {
   margin: 0;
-  font-size: 42px;
-  color: #333;
+  font-size: 48px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 
 .nav-links {
   display: flex;
@@ -45,11 +54,13 @@
   background-color: #0056b3;
 }
 
+
 .auth-section {
   display: flex;
   align-items: center;
   gap: 15px;
 }
+
 
 .auth-button {
   padding: 10px 15px;

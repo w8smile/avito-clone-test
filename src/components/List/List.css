@@ -1,4 +1,51 @@
 
+.filter-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+.filter-container input,
+.filter-container select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #fff;
+  width: 250px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+.filter-container input:focus,
+.filter-container select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.filter-container button {
+  padding: 12px 18px;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  width: 150px;
+}
+
+
+.filter-container button:hover {
+  background: linear-gradient(to right, #0056b3, #003d82);
+}
+
 .list-container {
   width: 100%;
   max-width: 1200px;
@@ -8,24 +55,6 @@
   border-radius: 12px;
 }
 
-
-.filter-container {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.filter-container input,
-.filter-container select {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
-  background: #fff;
-}
-
-
-
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -33,13 +62,11 @@
   margin-bottom: 30px;
 }
 
-
 .second-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
 
 .card {
   display: flex;
@@ -50,8 +77,8 @@
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition:
-    transform 0.3s ease-in-out,
-    box-shadow 0.3s ease-in-out;
+          transform 0.3s ease-in-out,
+          box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
@@ -59,18 +86,15 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-
 .card h3 {
   font-size: 20px;
   color: #333;
 }
 
-
 .card p {
   font-size: 14px;
   color: #555;
 }
-
 
 .card button {
   margin-top: auto;
@@ -88,7 +112,6 @@
   background: linear-gradient(to right, #0056b3, #003d82);
 }
 
-
 .logo-card {
   display: flex;
   align-items: center;
@@ -97,12 +120,10 @@
   border-radius: 12px;
 }
 
-
 .logo-card img {
   max-width: 80%;
   height: auto;
 }
-
 
 .pagination {
   display: flex;
@@ -130,3 +151,4 @@
   background: #ccc;
   cursor: not-allowed;
 }
+
