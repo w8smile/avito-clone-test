@@ -1,0 +1,33 @@
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    container_name: server-container
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./server:/app
+    networks:
+      - app-network
+    environment:
+      - NODE_ENV=development
+
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: client-container
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./client:/app
+    networks:
+      - app-network
+    environment:
+      - NODE_ENV=development
+
+networks:
+  app-network:
+    driver: bridge

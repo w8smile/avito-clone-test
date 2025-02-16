@@ -1,0 +1,13 @@
+.category-filters input.filter-input {
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.category-filters .filter-item {
+    margin-bottom: 10px;
+}

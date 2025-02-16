@@ -1,0 +1,51 @@
+.form-container {
+  max-width: 1000px; /* Увеличиваем максимальную ширину */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-textarea {
+  min-height: 100px;
+}
+
+.form-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+}
+
+.error-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffebee;
+  color: red;
+  border-radius: 5px;
+}
