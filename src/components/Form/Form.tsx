@@ -79,7 +79,7 @@ export const Form: React.FC<FormProps> = ({ isEdit = false }) => {
     }
 
     return () => {
-      controller.abort() // Отмена запроса при размонтировании компонента
+      controller.abort()
     }
   }, [isEdit, id, setValue])
 
@@ -88,7 +88,7 @@ export const Form: React.FC<FormProps> = ({ isEdit = false }) => {
 
     try {
       const res = await axios.post('http://localhost:3000/items', data, {
-        signal: controller.signal, // Передаем сигнал для отмены запроса
+        signal: controller.signal,
       })
       dispatch(addItem(res.data))
       setError(null)
